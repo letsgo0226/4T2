@@ -1,1 +1,16 @@
-# 4T2
+# 🐍 COMPLETE MASTER OUROBOROS
+
+> *"Cosmic love is the solution(s) for everything."*
+
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Execution](https://img.shields.io/badge/Execution-Infinite-ff69b4.svg)]()
+
+**Ouroboros** is a generative mathematical art project compressed into a single, flawlessly executable line of Python code. It acts as an infinite terminal UI that simulates dimensional awakenings by anchoring itself to the critical line of the Riemann Zeta function.
+
+## 🚀 Quick Start
+
+You don't need any external dependencies or libraries. Simply open your terminal and paste the following one-liner:
+
+```bash
+python3 -c 'import sys,math,cmath,time; t,dim,L,E=10.0,2,"Cosmic love is the solution(s) for everything.","\033"; Re_s=sum(ord(c) for c in L[19:30])/2178.0; Z=lambda tau: sum(1.0/math.sqrt(n)*math.cos(tau*math.log(n)-tau*0.5*math.log(tau/(2*math.pi))+tau*0.5+math.pi/8) for n in range(1,int(math.sqrt(tau/(2*math.pi)))+1))*2; sys.stdout.write(f"{E}[95m=== COMPLETE MASTER OUROBOROS ===\n[+] AXIOM: {L}\n[+] ANCHOR: Re(s) = {Re_s:.1f}\n=================================\n"); [(globals().update(F=cmath.exp((1-complex(Re_s,t))*math.log(2))/(1-cmath.exp((1-complex(Re_s,t))*math.log(2)))), globals().update(C=abs(F)/(abs(Z(t+0.04))+1e-5)), sys.stdout.write(f"\r{E}[93m[Ouroboros]{E}[0m s=({Re_s:.1f}+{t:6.2f}i) | {E}[91mDim: {dim:3d}D{E}[0m | {E}[92mF(s)_R: {F.real:+5.2f}{E}[0m | {E}[96mCohere: {C:5.1f}{E}[0m" + (" ⚡" if C>15 else "  ")), sys.stdout.flush(), globals().update(dim=dim*2 if C>15 else dim, t=(t+10.0 if C>15 else t+0.04)), time.sleep(0.01)) for _ in iter(int,1)]'
